@@ -1,21 +1,21 @@
-cppKinect2, a very user-friendly way to use Kinect One with C++
-
-Go to the tutorial: https://github.com/gdubrg/cppKinect2/wiki/cppKinect2-%E2%80%90-Use-Kinect-One-with-C-plus-plus
-
 # cppKinect2
-A very **user-friendly** way to use Kinect One with **C++**
+A very **user-friendly** and fast way to use **Kinect One** with **C++**.
+*Microsoft SDK* is a extremely useful tool to create programmes, but it is not so ready-to-use with C++ programming language. 
+With **cppKinect2** you can start programming and acquire RGB and depth images just in 5 minutes. Then, when you have time and desire, you could check the open source code to understand all the details about Microsoft device. 
+You can consider cppKinect2 as a *wrapper* of Microsoft SDK 2.0! Enjoy!
+Please, contact me for any suggestion or questions.
 
 ***
 
 **Prerequisites:**
-- OpenCV
-- Microsoft Kinect SDK (v2.0)
+- OpenCV (tested with 2.4.13)
+- Microsoft Kinect SDK (v2.0, for Kinect One)
 
 ***
 
 **How to use:**
-* Import all files (.cpp, .h) in your project. _Acquisitionkinect2_ is the acquisition from Microsoft Kinect One, _frameset.h_ is the container for all data extracted from the device.
-* Create a loop and call the method `getframe(frameset)`, using as parameter an instance of frameset.h
+* Import all files (.cpp, .h) in your project. _Acquisitionkinect2_ is the core acquisition from Microsoft Kinect One, _frameset.h_ is the container for all data extracted from the device;
+* Create a loop and call the method `getframe(frameset frame)`;
 * Get the data from the frameset
 * That's all!
 
@@ -24,7 +24,9 @@ A very **user-friendly** way to use Kinect One with **C++**
 **Code sample**
 ```
 int main(){
+
  ...
+ 
  Acquisition *_pkinect = nullptr;
  FrameSet frame;
 
