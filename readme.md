@@ -1,8 +1,8 @@
 # cppKinect2
 A very **user-friendly** and fast way to use **Kinect One** with **C++**.
-*Microsoft SDK* is a extremely useful tool to create programmes, but it is not so ready-to-use with C++ programming language. 
+*Microsoft SDK* is an extremely useful tool to create programmes with Kinect devices, but it is not so ready-to-use with C++ programming language. 
 With **cppKinect2** you can start programming and acquire RGB and depth images just in 5 minutes. Then, when you have time and desire, you could check the open source code to understand all the details about Microsoft device. 
-You can consider cppKinect2 as a *wrapper* of Microsoft SDK 2.0! Enjoy!
+You can consider cppKinect2 as a *wrapper* of *Microsoft SDK 2.0*! Enjoy!
 Please, contact me for any suggestion or questions.
 
 ***
